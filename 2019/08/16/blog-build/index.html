@@ -462,14 +462,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-09
+                    2020-08-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.9k
+                    4.1k
                 </div>
                 
 
@@ -491,13 +491,13 @@
 </blockquote>
 <p><img src="/medias/contact.jpg" alt></p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我是一个学习机械电子专业的学生，对于这块也只是凭着自己浓厚的兴趣，不断的摸鱼和学习，转眼间混迹计算机这个领域也有四五年了。很早的时候就有想过要搭建一个自己的博客，记录自己学习的东西，因为太忙，也因为自己太懒，终于在19年8月的时候下定决心开始搭建自己的独立博客，到现在也稍微像模像样了。我想很多小伙伴应该也想过搭建一个自己的博客，网上也有一堆详细教程。我在此就分享一下自己修改的博客源码以及搭建教程，其他的个性化操作就需要需要你们自己以后去摸索。</p>
-<p><strong>因为我用的电脑是MacOS，因此我只对Mac的终端和安装做讨论</strong>，Windows和其他系统应该像差不多，网上有很多很好的教程，又不懂的可以问我，也可以大家问度娘。</p>
+<p><strong>因为我用的电脑是MacOS，因此我只对Mac的终端安装做讨论</strong>，Windows和其他系统应该像差不多，网上有很多很好的教程，有不懂的可以问我，大家也可以问度娘。</p>
 <h2 id="我的博客源码地址"><a href="#我的博客源码地址" class="headerlink" title="我的博客源码地址"></a>我的博客源码地址</h2><hr>
 <p><a href="https://github.com/GodXYHZ/godxyhz.github.io/" title="我的博客源码地址" target="_blank" rel="noopener">———————————————我的博客源码地址———————————————</a></p>
 <hr>
 <p>  欢迎大家支持，借鉴和使用！</p>
 <p>  我也是一个刚刚接触前端的学习者，有些东西都不是很了解，如果其中有任何问题的话，还望大家指出。</p>
-<p>  这里我用到的框架是Hexo；hexo 可以理解为是基于node.js制作的一个博客工具，不是我们理解的一个开源的博客系统。其中的差别，有点意思。另外Hexo是高效的静态站点生成框架，它基于node.js。通过Hexo，你可以直接使用Markdown语法来撰写博客。对于markdown再次我就不在余缀了，因为写过工程文件的都知道，在工程文件里面附于README.md就是用它编写的，当然，如果是会使用Xcode，那会是更加简单！写完后只需要三条代码就可以上传，所以它做起来是很简单的事情！</p>
+<p>  这里我用到的框架是Hexo；hexo 可以理解为是基于node.js制作的一个博客工具，看到后缀js，我想很多的程序猿都很熟悉这个语言，不是我们理解的一个开源的博客系统。其中的差别，有点意思。另外Hexo是高效的静态站点生成框架，它基于node.js。通过Hexo，你可以直接使用Markdown语法来撰写博客。对于markdown在此我就不在余缀了，因为写过工程文件的都知道，在工程文件里面附于README.md就是用它编写的，当然，如果是会使用Xcode，那会是更加简单！写完后只需要三条代码就可以上传，所以它做起来是很简单的事情！</p>
 <p><strong>既然选择Hexo，那我们先来了解一下Hexo的优势和劣势吧</strong></p>
 <p><strong>其实上面也有提到过了</strong></p>
 <ul>
@@ -539,6 +539,10 @@
 <p>根据你对应的平台，下载LTS的版本，安装就行了（一直点继续就行了）</p>
 <p>最后安装好之后，按  “command+space”    打开终端，输入node -v和npm -v，如果出现版本号，那么就安装成功了。</p>
 <h3 id="安装国内的镜像源"><a href="#安装国内的镜像源" class="headerlink" title="安装国内的镜像源"></a>安装国内的镜像源</h3><p> 如果有梯子的话，可以直接安装Hexo。</p>
+<pre class=" language-shell"><code class="language-shell">
+    npm install hexo-cli -g
+</code></pre>
+<p> 但如果你没有梯子，就要先安装淘宝源，再安装，这样会更快！</p>
 <pre class=" language-shell"><code class="language-shell">    npm install -g cnpm --registry=https://registry.npm.taobao.org
 </code></pre>
 <p> 安装好了之后输入cnpm -v验证，如果出现版本号，那么就安装成功了。</p>
@@ -546,7 +550,7 @@
 <pre class=" language-shell"><code class="language-shell">    cnpm install -g hexo-cli
 </code></pre>
 <p>完成之后少不了验证，输入 hexo -v 验证，如果出现版本号，那么就安装成功了。</p>
-<p><strong>到这里，我们的hexo环境就搭建好了，有了环境，我们接下来就开始i写我们的第一篇blog吧！</strong></p>
+<p><strong>到这里，我们的hexo环境就搭建好了，有了环境，我们接下来就开始写我们的第一篇blog吧！</strong></p>
 <h2 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h2><p>找一个路径新建一个文件夹，当然了，这里我是使用终端直接建立的，在终端输入“mkdir blog” 新建一个为blog的文件夹，之后我们的blog就存放在此文件夹了！<strong>如果出现了什么错误，直接把此文件夹<del>干掉</del>重来就行了</strong>。</p>
 <p>建立好文件夹之后，接下来我们用Hexo帮我们生成（初始化一个blog）！！！</p>
 <p><strong>敲入以下命令就行了</strong></p>
@@ -555,12 +559,17 @@
 <p>你只需要等待一会儿就好了，一切都是这么美好！！</p>
 <p>等待克隆完了还会自动给你生成一个theme的默认主题，<strong>记住此文件夹，我们一会儿要用到！！</strong></p>
 <p><strong>到此安装就完成了，我们可以看来启动测试一下</strong></p>
+<h2 id="生成Blog"><a href="#生成Blog" class="headerlink" title="生成Blog"></a>生成Blog</h2><pre class=" language-shell"><code class="language-shell">
+    hexo g
+    hexo clean
+</code></pre>
 <h2 id="启动Blog"><a href="#启动Blog" class="headerlink" title="启动Blog"></a>启动Blog</h2><p>终端命令：</p>
 <pre class=" language-shell"><code class="language-shell">    hexo s</code></pre>
 <p>接下来终端会在本地的服务器为你生成一个ip地址为4000的服务器，此时按住“command”键单击这个地址，你就会看到输入你自己blog了，是不是很简单！！<br>是的，一切都是这么简单！！一切都是这么美好！！</p>
 <p>打开你会看到里面还有一片名为“Hello Worldd”的博文，但这篇博文是Hexo为我们生成的，有的伙伴会问，像我这样优雅的博文，是怎么写出来的呢？<br>现在就要用到我前面所提到的“Markdown”了，所有的博文都是基于Markdown写的，至于Markdown的语法是怎么样的，我就不做讨论了。</p>
 <h2 id="新建Blog"><a href="#新建Blog" class="headerlink" title="新建Blog"></a>新建Blog</h2><p>那我们怎么生成一片新的博文呢？这个就很简单</p>
-<pre class=" language-shell"><code class="language-shell">     hexo n "your blog name" 
+<pre class=" language-shell"><code class="language-shell">
+     hexo n "your blog name" 
 </code></pre>
 <p>打开  ../blog/source/_posts  在里面你就会看到刚刚你创建的blog，然后你可以选着适合你自己的编辑器，开始愉快的写属于你自己的blog吧！</p>
 <h2 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h2><p>接下来还有什么呢？我们是不是需要把我们的blog推向远端，不然你总不可能只在本地的计算机访问吧！好的，说干就干！</p>
@@ -569,20 +578,22 @@
 <hr>
 <p><a href="https://www.github.com/" title="github" target="_blank" rel="noopener">————————————————github————————————————</a></p>
 <hr>
+<p><strong>注册好之后</strong></p>
+<p>就可以进行下面的操作了</p>
 <p>新建一个项目，如下所示：</p>
 <p><img src="https://s1.ax1x.com/2020/07/29/aZe8vn.md.jpg" alt="新建仓库1" title="新建仓库"></p>
 <p>然后如下图所示，输入自己的项目名字，后面一定要加.github.io后缀(<strong>必须是这个名字</strong>)，README初始化你随意吧，一般是要勾上的。</p>
 <p><img src="https://s1.ax1x.com/2020/07/29/aZK2yd.md.jpg" alt="新建仓库2"></p>
-<p>你就会在顶栏看到属于自己的网站地址，没错，就是那一长串“XXXXXX.github.io”<br>到这里我们的仓库就建好了！！</p>
+<p>你就会在顶栏看到属于自己的网站地址，没错，就是那一长串“<code>XXXXXX.github.io</code>”<br>到这里我们的仓库就建好了！！</p>
 <h2 id="上传Hexo到仓库"><a href="#上传Hexo到仓库" class="headerlink" title="上传Hexo到仓库"></a>上传Hexo到仓库</h2><p>是的，我们的Blog已经搭建好了，仓库（服务器）我们也有了，那么接下来就是上我们的Blog到仓库，这样我们就能实现远程的访问了。。。Let’s go  ！！</p>
-<p>上传之前，我们还需要修改一下blog的配置文件，找到我们blog的根目录，打开其中的_config.yml文件，搜索deploy<br>把其中的repository改成你自己的仓库地址就行了</p>
+<p>上传之前，我们还需要修改一下blog的配置文件，找到我们blog的根目录，打开其中的<code>_config.yml</code>文件，搜索<code>deploy</code><br>把其中的<code>repository</code>改成你自己的仓库地址就行了</p>
 <p><strong>例如我的仓库地址就是 <a href="https://github.com/GodXYHZ/GodXYHZ.github.io.git" target="_blank" rel="noopener">https://github.com/GodXYHZ/GodXYHZ.github.io.git</a></strong><br><strong>当然了，如果你有自己的服务器，那你就改成自己服务器的地址就行了</strong></p>
 <p>完成之后，我们回到终端，用三条命令就能实现上传我们的blog了</p>
 <pre class=" language-shell"><code class="language-shell">    hexo g
     hexo clean
     hexo d</code></pre>
 <p><strong>三条命令是分开的哦，每敲完一条代码请耐心等待执行完毕</strong></p>
-<p>完成之后，大概等差不多一分钟左右，在你的浏览器输入你的guithub仓库的地址，就能看到你的blog地址了，怎么样，是不是很简单呢！</p>
+<p>完成之后，大概等差不多一分钟左右，在你的浏览器输入你的guithub仓库的地址，就能看到你的blog了，怎么样，是不是很简单呢！</p>
 <h2 id="为Hexo应用主题"><a href="#为Hexo应用主题" class="headerlink" title="为Hexo应用主题"></a>为Hexo应用主题</h2><p>这个时候有的同学可能会问了，为啥你的blog那么好看，而我的却这么low，这时候我们就需要用到上看我贴出来的源码以及那个要求你们记住的theme主题文件夹了，我们替换里面的主题文件就好了。</p>
 <p>**找一个你喜欢的主题样式（百度，Google一搜一大堆），下载解压，然后复制替换原blog的theme文件夹里面的主题文件夹,然后修改 Hexo 根目录下的 <code>_config.yml</code> 的  <code>theme</code> 的值：<code>theme: ”your theme name“</code>即可，完成之后再去终端执行上面的三条命令。</p>
 <pre class=" language-shell"><code class="language-shell">    hexo g
@@ -598,7 +609,8 @@
 <p>但是现在不一样了！！<strong>因为一切都变美好了！</strong></p>
 <p>现在的aplayer非常强大，因为有了MeingJS的支持，MetingJS 是基于Meting API 的 APlayer 衍生播放器，引入 MetingJS 后，播放器将支持对于 QQ音乐、网易云音乐、虾米、酷狗、百度等平台的音乐播放。相信这支持的平台基本上都有平实我们用的播放器了，有了这个插件到时候直接插入你的音乐播放列表的ID就行了！</p>
 <p>还是一样，<strong>终端执行下面的命令</strong> </p>
-<pre class=" language-shell"><code class="language-shell">      npm install --save hexo-tag-aplayer
+<pre class=" language-shell"><code class="language-shell">
+      npm install --save hexo-tag-aplayer
 </code></pre>
 <p>完成之后，我们只需要在主题文件的的_config.yml配置文件中启用即可：</p>
 <p><code>aplayer</code><br>        <code>meting ：true</code></p>
@@ -697,7 +709,7 @@
 <li>增加建站时间</li>
 </ul>
 <p>这里我只针对我使用的matery主题做设置</p>
-<p>修改/themes/matery/layout/_partial/footer.ejs文件，在最后加上</p>
+<p>修改<code>../themes/matery/layout/_partial/footer.ejs</code>文件，在最后加上</p>
 <pre class=" language-java"><code class="language-java">    <span class="token operator">&lt;</span>script language<span class="token operator">=</span>javascript<span class="token operator">></span>
         function <span class="token function">siteTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             window<span class="token punctuation">.</span><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token string">"siteTime()"</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -773,6 +785,7 @@
         <span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
     <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 </code></pre>
+<p>或者按照不蒜子官网的方法安装（<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">点击这里</a>）</p>
 <ul>
 <li>美化-添加动漫人物</li>
 </ul>
@@ -795,7 +808,7 @@ npm uninstall hexo-helper-live2d
 npm install --save hexo-helper-live2d
 </code></pre>
 <p>安装完成之后在 <code>package.json</code> 会看到安装的<em>model</em></p>
-<p>这个时候 <code>package.json</code> 里面就会出现 <code>&quot;hexo-helper-live2d&quot;: &quot;^3.0.3&quot;</code> 这行代码</p>
+<p>这个时候 <code>package.json</code> 里面就会出现 <code>&quot;hexo-helper-live2d&quot;: &quot;^3.0.3&quot;</code> (不一定是3.0.3，版本号而已)这行代码</p>
 <p>此时再去 <em>node_moduels</em> 目录下，可以看到一些 <em>live2d</em> 开头的文件夹，这些都是动画主配置</p>
 <p><strong>下载各种动画</strong> <em>model</em> ：</p>
 <p>地址：<a href="https://github.com/xiazeyu/live2d-widget-models.git" target="_blank" rel="noopener">https://github.com/xiazeyu/live2d-widget-models.git</a></p>
@@ -823,7 +836,7 @@ npm install --save hexo-helper-live2d
 <p>我的主题源码我也已经放在GitHub了，如果你也喜欢，欢迎使用！</p>
 <p>在这里还要特别感<strong>HarborZeng</strong>和<strong>Blinkfox</strong>两位大佬，感谢他们做出的贡献！！</p>
 <p><strong>最后再总结一下目录结构</strong></p>
-<p>node_modules是node.js各种库的目录，public是生成的网页文件目录，scaffolds里面就三个文件，存储着新文章和新页面的初始设置，source是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，themes存放着主题文件，一般也用不到。</p>
+<p>node_modules是node.js各种库的目录，public是生成的网页文件目录，scaffolds里面就三个文件，存储着新文章和新页面的初始设置，source是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，themes存放着主题文件，一般也用不到。<br>总的来说只要部署成功了，基本上不需要改动什么，只需要写文章就行了！</p>
 <p>之后我们就可以愉快的写我们的blog了！！</p>
 
             </div>
@@ -1065,9 +1078,9 @@ npm install --save hexo-helper-live2d
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="十大经典排序算法整理汇总（附代码）[转载来自韦阳的blog]">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="十大经典排序算法整理汇总(附代码)">
                         
-                        <span class="card-title">十大经典排序算法整理汇总（附代码）[转载来自韦阳的blog]</span>
+                        <span class="card-title">十大经典排序算法整理汇总(附代码)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1335,7 +1348,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <span id="year">2019</span>
             <a href="/about" target="_blank">筱雨涵</a>
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">7.1k</span>
+            <span class="white-color">7.3k</span>
             
             <br>
             
@@ -1541,6 +1554,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
 </html>
