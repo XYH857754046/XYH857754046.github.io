@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godxyh.cn/"/>
-  <updated>2020-08-13T13:32:59.686Z</updated>
+  <updated>2020-08-15T12:35:20.410Z</updated>
   <id>https://godxyh.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>带你快速入门Html并制作简单网页相册</title>
+    <link href="https://godxyh.cn/2020/08/15/dai-ni-kuai-su-ru-men-html-bing-zhi-zuo-jian-dan-wang-ye-xiang-ce/"/>
+    <id>https://godxyh.cn/2020/08/15/dai-ni-kuai-su-ru-men-html-bing-zhi-zuo-jian-dan-wang-ye-xiang-ce/</id>
+    <published>2020-08-15T08:38:23.000Z</published>
+    <updated>2020-08-15T12:35:20.410Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;如果事与愿违，那就相信上天另有安排！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="html语法" scheme="https://godxyh.cn/categories/html%E8%AF%AD%E6%B3%95/"/>
+    
+    
+      <category term="html" scheme="https://godxyh.cn/tags/html/"/>
+    
+      <category term="网页" scheme="https://godxyh.cn/tags/%E7%BD%91%E9%A1%B5/"/>
+    
+  </entry>
   
   <entry>
     <title>让你的电脑拥有个性化的开机图片</title>
