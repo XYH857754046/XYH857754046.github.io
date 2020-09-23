@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godxyh.cn/2019/08/16/blog-build/</loc>
+    
+    <lastmod>2020-09-23T04:39:23.515Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godxyh.cn/2020/08/15/dai-ni-kuai-su-ru-men-html-bing-zhi-zuo-jian-dan-wang-ye-xiang-ce/</loc>
     
     <lastmod>2020-08-15T12:43:44.432Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://godxyh.cn/2020/02/16/sort-algorithms/</loc>
     
     <lastmod>2020-08-14T01:45:43.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godxyh.cn/2019/08/16/blog-build/</loc>
-    
-    <lastmod>2020-08-14T01:44:28.366Z</lastmod>
     
   </url>
   
@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://godxyh.cn/archives/index.html</loc>
+    <loc>https://godxyh.cn/categories/index.html</loc>
     
     <lastmod>2020-04-04T11:43:42.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godxyh.cn/categories/index.html</loc>
+    <loc>https://godxyh.cn/archives/index.html</loc>
     
     <lastmod>2020-04-04T11:43:42.000Z</lastmod>
     
